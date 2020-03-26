@@ -1,16 +1,9 @@
 import React from 'react';
 import { View, StyleSheet, Text } from 'react-native';
-
-import { Ionicons } from '@expo/vector-icons';
-
+import Icon from 'react-native-vector-icons/Ionicons';
 const TabIcon = (props) => (
-  <Ionicons
-    name={'md-home'}
-    size={35}
-    color={props.focused ? 'grey' : 'darkgrey'}
-  />
+  <Icon name="md-basket" color={props.focused ? 'red' : '#000000'} size={25} />
 )
-
 export default class BudjectList extends React.Component {
 
   static navigationOptions = {
