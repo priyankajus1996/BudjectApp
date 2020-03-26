@@ -5,7 +5,7 @@ import Icon from 'react-native-vector-icons/Ionicons';
 const TabIcon = (props) => (
   <Icon name="md-brush" color={props.focused ? 'red' : '#000000'} size={25} />
 )
-export default class AddBudject extends React.Component {
+export default class EditBudject extends React.Component {
 
   static navigationOptions = {
     tabBarIcon: TabIcon
