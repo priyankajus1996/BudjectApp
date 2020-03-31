@@ -14,7 +14,7 @@ export default class AddBudject extends React.Component {
   render() {
     return (
       <View style={styles.container} >
-       <Image source={require('../assets/add_bud_img.jpg')} style={styles.budImg} />
+       <Image source={require('../../assets/add_bud_img.jpg')} style={styles.budImg} />
       </View>
     );
   }
