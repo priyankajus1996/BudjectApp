@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StyleSheet, Image, Text } from 'react-native';
+import { View, StyleSheet, Image, Text, TouchableHighlight } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import LinearGradient from 'react-native-linear-gradient';
 
@@ -17,11 +17,14 @@ export default class AddBudject extends React.Component {
       <View style={styles.container} >
         <Image source={require('../../assets/add_bud_img.jpg')} style={styles.budImg} />
         <LinearGradient colors={['#ff66cc', '#ffccff', '#66ccff']} >
-        <LinearGradient colors={['#003366', '#0066ff', '#003366']} style={styles.linearGradient}>
-          <Text style={styles.buttonText}>
-            Add Budject
+          <LinearGradient colors={['#003366', '#0066ff', '#003366']} style={styles.linearGradient}>
+            <TouchableHighlight underlayColor="white">
+              <Text style={styles.buttonText}>
+                Add Budject
   </Text>
-        </LinearGradient>
+            </TouchableHighlight>
+
+          </LinearGradient>
         </LinearGradient>
       </View>
     );
